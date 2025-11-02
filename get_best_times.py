@@ -425,18 +425,28 @@ def setup_driver():
         system_chromedriver = shutil.which('chromedriver')
 
         if not system_chromedriver:
-            # Try absolute path
-            system_chromedriver = '/usr/bin/chromedriver'
-            if not os.path.exists(system_chromedriver):
-                raise RuntimeError("chromedriver not found on Streamlit Cloud. Make sure packages.txt includes chromium-chromedriver")
+            # Try absolute paths
+            possible_paths = [
+                '/usr/bin/chromedriver',
+                '/usr/local/bin/chromedriver',
+                '/snap/bin/chromium.chromedriver'
+            ]
+            for path in possible_paths:
+                if os.path.exists(path):
+                    system_chromedriver = path
+                    break
+
+        if not system_chromedriver:
+            raise RuntimeError("chromedriver not found on Streamlit Cloud. Make sure packages.txt includes chromium-driver")
 
         print(f"Using system chromedriver: {system_chromedriver}")
         service = Service(executable_path=system_chromedriver)
 
         # Find chromium binary
         chromium_paths = [
-            '/usr/bin/chromium-browser',
             '/usr/bin/chromium',
+            '/usr/bin/chromium-browser',
+            '/snap/bin/chromium',
             '/usr/bin/google-chrome'
         ]
 
@@ -449,7 +459,7 @@ def setup_driver():
                 break
 
         if not chromium_found:
-            raise RuntimeError("Chromium browser not found. Make sure packages.txt includes chromium-browser")
+            raise RuntimeError("Chromium browser not found. Make sure packages.txt includes chromium")
     else:
         # Local development - use webdriver-manager
         print("Using webdriver-manager for local development")
