@@ -418,11 +418,31 @@ def setup_driver():
     import shutil
     system_chromedriver = shutil.which('chromedriver')
 
-    if system_chromedriver and os.environ.get('STREAMLIT_SHARING_MODE'):
+    # Detect Streamlit Cloud by checking for system chromedriver and typical Streamlit Cloud paths
+    is_streamlit_cloud = (
+        system_chromedriver is not None and
+        (os.path.exists('/mount/src') or  # Streamlit Cloud mount point
+         os.environ.get('STREAMLIT_SHARING_MODE') or
+         os.path.exists('/usr/bin/chromium-browser'))
+    )
+
+    if is_streamlit_cloud and system_chromedriver:
         # Use system chromedriver on Streamlit Cloud
+        print(f"Using system chromedriver: {system_chromedriver}")
         service = Service(executable_path=system_chromedriver)
-        # Use chromium binary on Streamlit Cloud
-        chrome_options.binary_location = '/usr/bin/chromium-browser'
+
+        # Try different chromium binary locations
+        chromium_paths = [
+            '/usr/bin/chromium-browser',
+            '/usr/bin/chromium',
+            '/usr/bin/google-chrome'
+        ]
+
+        for chromium_path in chromium_paths:
+            if os.path.exists(chromium_path):
+                chrome_options.binary_location = chromium_path
+                print(f"Using chromium binary: {chromium_path}")
+                break
     else:
         # Use webdriver-manager for local development
         service = Service(ChromeDriverManager().install())
