@@ -58,7 +58,18 @@ def load_swimmers_from_secrets():
     """Load swimmers from Streamlit secrets."""
     try:
         # Streamlit secrets are accessed via st.secrets
-        swimmers = dict(st.secrets["swimmers"])
+        # Need to convert AttrDict to regular dict recursively
+        swimmers_raw = st.secrets["swimmers"]
+        swimmers = {}
+
+        for name, data in swimmers_raw.items():
+            # Convert nested AttrDict to regular dict
+            swimmers[name] = {
+                'id': data['id'],
+                'birthday': data['birthday'],
+                'gender': data['gender']
+            }
+
         return swimmers
     except Exception as e:
         st.error(f"Error loading swimmers from secrets: {e}")
