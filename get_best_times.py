@@ -413,38 +413,46 @@ def setup_driver():
     chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
     chrome_options.add_experimental_option('useAutomationExtension', False)
 
-    # Check if running in Streamlit Cloud environment
-    # Streamlit Cloud has chromium-chromedriver installed system-wide
-    import shutil
-    system_chromedriver = shutil.which('chromedriver')
+    # Detect Streamlit Cloud - check for mount point first as it's most reliable
+    is_streamlit_cloud = os.path.exists('/mount/src')
 
-    # Detect Streamlit Cloud by checking for system chromedriver and typical Streamlit Cloud paths
-    is_streamlit_cloud = (
-        system_chromedriver is not None and
-        (os.path.exists('/mount/src') or  # Streamlit Cloud mount point
-         os.environ.get('STREAMLIT_SHARING_MODE') or
-         os.path.exists('/usr/bin/chromium-browser'))
-    )
+    if is_streamlit_cloud:
+        # Running on Streamlit Cloud - use system packages
+        print("Detected Streamlit Cloud environment")
 
-    if is_streamlit_cloud and system_chromedriver:
-        # Use system chromedriver on Streamlit Cloud
+        # Find chromedriver
+        import shutil
+        system_chromedriver = shutil.which('chromedriver')
+
+        if not system_chromedriver:
+            # Try absolute path
+            system_chromedriver = '/usr/bin/chromedriver'
+            if not os.path.exists(system_chromedriver):
+                raise RuntimeError("chromedriver not found on Streamlit Cloud. Make sure packages.txt includes chromium-chromedriver")
+
         print(f"Using system chromedriver: {system_chromedriver}")
         service = Service(executable_path=system_chromedriver)
 
-        # Try different chromium binary locations
+        # Find chromium binary
         chromium_paths = [
             '/usr/bin/chromium-browser',
             '/usr/bin/chromium',
             '/usr/bin/google-chrome'
         ]
 
+        chromium_found = False
         for chromium_path in chromium_paths:
             if os.path.exists(chromium_path):
                 chrome_options.binary_location = chromium_path
                 print(f"Using chromium binary: {chromium_path}")
+                chromium_found = True
                 break
+
+        if not chromium_found:
+            raise RuntimeError("Chromium browser not found. Make sure packages.txt includes chromium-browser")
     else:
-        # Use webdriver-manager for local development
+        # Local development - use webdriver-manager
+        print("Using webdriver-manager for local development")
         service = Service(ChromeDriverManager().install())
 
     return webdriver.Chrome(service=service, options=chrome_options)
