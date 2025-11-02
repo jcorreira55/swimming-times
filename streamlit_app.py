@@ -6,14 +6,10 @@ Uses the existing get_best_times.py module for core functionality.
 
 import streamlit as st
 import json
-from io import StringIO
-import sys
 
 # Import functions from existing CLI script
 from get_best_times import (
     get_swimmer_best_times,
-    display_best_times,
-    lookup_swimmer_id,
     calculate_age
 )
 
@@ -25,18 +21,25 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Custom CSS for better table display
+# Custom CSS for mobile-friendly display
 st.markdown("""
     <style>
     .stApp {
         max-width: 100%;
     }
-    pre {
-        font-family: 'Courier New', monospace;
-        font-size: 12px;
-        line-height: 1.4;
-        white-space: pre;
-        overflow-x: auto;
+    /* Make expanders more prominent */
+    .streamlit-expanderHeader {
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+    /* Better spacing on mobile */
+    @media (max-width: 768px) {
+        .stMetric {
+            padding: 0.5rem 0;
+        }
+        div[data-testid="column"] {
+            padding: 0.25rem;
+        }
     }
     </style>
 """, unsafe_allow_html=True)
@@ -76,25 +79,115 @@ def load_swimmers_from_secrets():
         return {}
 
 
-def capture_display_output(best_times, swimmer_id, swimmer_info, show_standards, show_time_age):
-    """Capture the CLI display output as a string."""
-    # Redirect stdout to capture print statements
-    old_stdout = sys.stdout
-    sys.stdout = captured_output = StringIO()
+def display_times_mobile_friendly(best_times, swimmer_info, show_standards, show_time_age):
+    """Display times in a mobile-friendly format using Streamlit components."""
+    from get_best_times import (
+        compare_to_standards,
+        calculate_time_age_months,
+        load_time_standards
+    )
 
-    try:
-        display_best_times(
-            best_times=best_times,
-            swimmer_id=swimmer_id,
-            swimmer_info=swimmer_info,
-            show_standards=show_standards,
-            show_time_age=show_time_age
-        )
-        output = captured_output.getvalue()
-    finally:
-        sys.stdout = old_stdout
+    if not best_times:
+        st.warning("No times found")
+        return
 
-    return output
+    # Load standards if needed
+    standards = None
+    age = None
+    gender = None
+
+    if show_standards and swimmer_info:
+        standards = load_time_standards()
+        age = swimmer_info.get('age')
+        gender = swimmer_info.get('gender')
+
+    # Display each time as a card
+    for entry in best_times:
+        event = entry['event']
+        time_val = entry['time']
+        meet = entry['meet']
+        date_val = entry['date']
+        is_usa = entry.get('usa_swimming', True)
+        usa_best = entry.get('usa_best')
+
+        # Create expandable section for each event
+        with st.expander(f"**{event}** - {time_val} {'🏫' if not is_usa else ''}", expanded=False):
+            # Main time info
+            col1, col2 = st.columns([1, 1])
+
+            with col1:
+                st.metric("Time", time_val)
+                if not is_usa:
+                    st.caption("🏫 High School Meet")
+
+            with col2:
+                if show_time_age:
+                    months_ago = calculate_time_age_months(date_val)
+                    age_str = f"{months_ago} months ago" if months_ago is not None else "N/A"
+                    st.metric("Time Age", age_str)
+
+            st.write(f"**Meet:** {meet}")
+            st.write(f"**Date:** {date_val}")
+
+            # Standards comparison
+            if show_standards and standards and age and gender:
+                if is_usa:
+                    current_std, next_std, time_diff = compare_to_standards(
+                        time_val, event, age, gender, standards
+                    )
+
+                    if current_std or next_std:
+                        st.divider()
+                        st.write("**Standards:**")
+
+                        col1, col2, col3 = st.columns(3)
+
+                        with col1:
+                            st.metric("Current", current_std if current_std else "Not yet")
+
+                        with col2:
+                            st.metric("Next Goal", next_std if next_std else "—")
+
+                        with col3:
+                            if time_diff is not None:
+                                diff_str = f"{abs(time_diff):.2f}s {'faster needed' if time_diff > 0 else 'faster than needed'}"
+                                st.metric("Difference", diff_str)
+                else:
+                    st.info("High school times don't count toward USA Swimming standards")
+
+            # USA Swimming best time if available
+            if usa_best:
+                st.divider()
+                st.write("**Best USA Swimming Time:**")
+
+                col1, col2 = st.columns([1, 1])
+
+                with col1:
+                    st.metric("USA Time", usa_best['time'])
+
+                with col2:
+                    st.write(f"**Meet:** {usa_best['meet']}")
+                    st.write(f"**Date:** {usa_best['date']}")
+
+                # Standards for USA best
+                if show_standards and standards and age and gender:
+                    current_std, next_std, time_diff = compare_to_standards(
+                        usa_best['time'], event, age, gender, standards
+                    )
+
+                    if current_std or next_std:
+                        col1, col2, col3 = st.columns(3)
+
+                        with col1:
+                            st.metric("Current", current_std if current_std else "Not yet")
+
+                        with col2:
+                            st.metric("Next Goal", next_std if next_std else "—")
+
+                        with col3:
+                            if time_diff is not None:
+                                diff_str = f"{abs(time_diff):.2f}s"
+                                st.metric("Difference", diff_str)
 
 
 def main():
@@ -191,17 +284,27 @@ def main():
                 )
 
                 if best_times:
-                    # Capture the formatted output
-                    output = capture_display_output(
+                    # Display header with swimmer info
+                    st.subheader(f"Personal Best Times - {selected_name}")
+
+                    if swimmer_info:
+                        col1, col2, col3 = st.columns(3)
+                        with col1:
+                            st.metric("Age", swimmer_info.get('age', 'N/A'))
+                        with col2:
+                            st.metric("Age Group", swimmer_info.get('age_group', 'N/A'))
+                        with col3:
+                            st.metric("Gender", swimmer_info.get('gender', 'N/A'))
+
+                    st.markdown("---")
+
+                    # Display times in mobile-friendly format
+                    display_times_mobile_friendly(
                         best_times=best_times,
-                        swimmer_id=swimmer_id,
                         swimmer_info=swimmer_info,
                         show_standards=show_standards,
                         show_time_age=show_time_age
                     )
-
-                    # Display in a code block for proper formatting
-                    st.code(output, language=None)
 
                     # Success message
                     st.success(f"✅ Found {len(best_times)} personal best times")
