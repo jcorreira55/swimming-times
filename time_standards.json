@@ -1,0 +1,1208 @@
+{
+  "15+": {
+    "Girl": {
+      "200 Back SCY": {
+        "bronze": 155.79,
+        "silver": 147.59,
+        "age_group": 134.49
+      },
+      "200 Free-R SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 106.99000000000001
+      },
+      "1000 Free SCY": {
+        "bronze": 745.99,
+        "silver": 692.69,
+        "age_group": null
+      },
+      "MIXED 200 Free SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 99.69
+      },
+      "1650 Free SCY": {
+        "bronze": 1225.99,
+        "silver": 1194.29,
+        "age_group": null
+      },
+      "MIXED 200 MR SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 113.99000000000001
+      },
+      "800 Free-R SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 483.99
+      },
+      "400 MR SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 253.69
+      },
+      "1500/1650 Free SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 1149.09
+      },
+      "800/1000 Free SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 670.79
+      },
+      "400 Free-R SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 222.19
+      },
+      "200 IM SCY": {
+        "bronze": 160.59,
+        "silver": 143.69,
+        "age_group": 135.09
+      },
+      "200 Free SCY": {
+        "bronze": 141.49,
+        "silver": 127.59,
+        "age_group": 119.09
+      },
+      "200 MR SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 119.89
+      },
+      "100 Back SCY": {
+        "bronze": 76.69,
+        "silver": 68.69,
+        "age_group": 62.59
+      },
+      "50 Free SCY": {
+        "bronze": 29.99,
+        "silver": 27.89,
+        "age_group": 25.99
+      },
+      "100 Free SCY": {
+        "bronze": 65.79,
+        "silver": 58.89,
+        "age_group": 54.99
+      },
+      "200 Fly SCY": {
+        "bronze": 160.99,
+        "silver": 157.69,
+        "age_group": 139.79
+      },
+      "400/500 Free SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 319.99
+      },
+      "200 Breast SCY": {
+        "bronze": 185.79,
+        "silver": 176.49,
+        "age_group": 156.19
+      },
+      "100 Breast SCY": {
+        "bronze": 85.78999999999999,
+        "silver": 80.78999999999999,
+        "age_group": 72.28999999999999
+      },
+      "100 Fly SCY": {
+        "bronze": 74.99,
+        "silver": 67.99,
+        "age_group": 61.49
+      },
+      "400 IM SCY": {
+        "bronze": 336.99,
+        "silver": 327.19,
+        "age_group": 290.99
+      },
+      "500 Free SCY": {
+        "bronze": 368.29,
+        "silver": 343.89,
+        "age_group": null
+      }
+    },
+    "Boy": {
+      "200 Back SCY": {
+        "bronze": 146.99,
+        "silver": 143.69,
+        "age_group": 125.99
+      },
+      "200 Free-R SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 94.39
+      },
+      "1000 Free SCY": {
+        "bronze": 731.99,
+        "silver": 657.79,
+        "age_group": null
+      },
+      "MIXED 200 Free SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 99.69
+      },
+      "1650 Free SCY": {
+        "bronze": 1199.99,
+        "silver": 1125.19,
+        "age_group": null
+      },
+      "MIXED 200 MR SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 113.99000000000001
+      },
+      "800 Free-R SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 444.79
+      },
+      "400 MR SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 232.29
+      },
+      "1500/1650 Free SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 1079.99
+      },
+      "800/1000 Free SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 638.19
+      },
+      "400 Free-R SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 202.19
+      },
+      "200 IM SCY": {
+        "bronze": 151.79,
+        "silver": 135.99,
+        "age_group": 123.09
+      },
+      "200 Free SCY": {
+        "bronze": 135.99,
+        "silver": 118.99000000000001,
+        "age_group": 109.59
+      },
+      "200 MR SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 113.99000000000001
+      },
+      "100 Back SCY": {
+        "bronze": 73.59,
+        "silver": 65.19,
+        "age_group": 58.29
+      },
+      "50 Free SCY": {
+        "bronze": 27.99,
+        "silver": 25.59,
+        "age_group": 23.09
+      },
+      "100 Free SCY": {
+        "bronze": 60.49,
+        "silver": 54.29,
+        "age_group": 50.09
+      },
+      "200 Fly SCY": {
+        "bronze": 155.99,
+        "silver": 145.69,
+        "age_group": 128.49
+      },
+      "400/500 Free SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 298.99
+      },
+      "200 Breast SCY": {
+        "bronze": 172.49,
+        "silver": 164.99,
+        "age_group": 142.89
+      },
+      "100 Breast SCY": {
+        "bronze": 77.89,
+        "silver": 75.09,
+        "age_group": 65.49
+      },
+      "100 Fly SCY": {
+        "bronze": 72.09,
+        "silver": 62.89,
+        "age_group": 55.89
+      },
+      "400 IM SCY": {
+        "bronze": 330.19,
+        "silver": 306.89,
+        "age_group": 271.19
+      },
+      "500 Free SCY": {
+        "bronze": 352.29,
+        "silver": 328.99,
+        "age_group": null
+      }
+    }
+  },
+  "11-12": {
+    "Girl": {
+      "200 Back SCY": {
+        "bronze": 186.99,
+        "silver": 171.29,
+        "age_group": 153.79
+      },
+      "200 Free-R SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 119.99000000000001
+      },
+      "1000 Free SCY": {
+        "bronze": 899.09,
+        "silver": 825.59,
+        "age_group": null
+      },
+      "MIXED 200 Free SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 120.39
+      },
+      "1650 Free SCY": {
+        "bronze": 1499.99,
+        "silver": 1399.99,
+        "age_group": null
+      },
+      "MIXED 200 MR SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 141.29
+      },
+      "400 MR SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 310.09
+      },
+      "1500/1650 Free SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 1287.59
+      },
+      "50 Breast SCY": {
+        "bronze": 50.99,
+        "silver": 41.79,
+        "age_group": 37.89
+      },
+      "50 Back SCY": {
+        "bronze": 45.99,
+        "silver": 36.79,
+        "age_group": 32.89
+      },
+      "800/1000 Free SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 747.69
+      },
+      "400 Free-R SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 264.39
+      },
+      "200 IM SCY": {
+        "bronze": 198.99,
+        "silver": 171.79,
+        "age_group": 152.99
+      },
+      "200 Free SCY": {
+        "bronze": 171.99,
+        "silver": 150.99,
+        "age_group": 134.39
+      },
+      "200 MR SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 140.59
+      },
+      "100 IM SCY": {
+        "bronze": 94.99000000000001,
+        "silver": 79.99,
+        "age_group": 71.49
+      },
+      "100 Back SCY": {
+        "bronze": 96.99000000000001,
+        "silver": 80.28999999999999,
+        "age_group": 70.69
+      },
+      "50 Free SCY": {
+        "bronze": 37.99,
+        "silver": 31.59,
+        "age_group": 28.39
+      },
+      "100 Free SCY": {
+        "bronze": 81.99,
+        "silver": 69.59,
+        "age_group": 61.49
+      },
+      "50 Fly SCY": {
+        "bronze": 46.99,
+        "silver": 35.79,
+        "age_group": 31.49
+      },
+      "200 Fly SCY": {
+        "bronze": 199.99,
+        "silver": 175.59,
+        "age_group": 167.49
+      },
+      "400/500 Free SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 358.79
+      },
+      "200 Breast SCY": {
+        "bronze": 215.99,
+        "silver": 195.59,
+        "age_group": 176.99
+      },
+      "100 Breast SCY": {
+        "bronze": 107.99000000000001,
+        "silver": 89.99,
+        "age_group": 82.09
+      },
+      "100 Fly SCY": {
+        "bronze": 103.99000000000001,
+        "silver": 82.28999999999999,
+        "age_group": 72.19
+      },
+      "400 IM SCY": {
+        "bronze": 394.19,
+        "silver": 369.29,
+        "age_group": 330.49
+      },
+      "500 Free SCY": {
+        "bronze": 435.99,
+        "silver": 403.69,
+        "age_group": null
+      }
+    },
+    "Boy": {
+      "200 Back SCY": {
+        "bronze": 190.99,
+        "silver": 169.99,
+        "age_group": 153.79
+      },
+      "200 Free-R SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 119.99000000000001
+      },
+      "1000 Free SCY": {
+        "bronze": 879.59,
+        "silver": 816.99,
+        "age_group": null
+      },
+      "MIXED 200 Free SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 120.39
+      },
+      "1650 Free SCY": {
+        "bronze": null,
+        "silver": 1385.99,
+        "age_group": null
+      },
+      "MIXED 200 MR SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 141.29
+      },
+      "400 MR SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 310.09
+      },
+      "1500/1650 Free SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 1287.59
+      },
+      "50 Breast SCY": {
+        "bronze": 51.99,
+        "silver": 41.89,
+        "age_group": 37.89
+      },
+      "50 Back SCY": {
+        "bronze": 46.99,
+        "silver": 36.59,
+        "age_group": 32.89
+      },
+      "800/1000 Free SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 747.69
+      },
+      "400 Free-R SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 262.79
+      },
+      "200 IM SCY": {
+        "bronze": 199.99,
+        "silver": 170.69,
+        "age_group": 152.99
+      },
+      "200 Free SCY": {
+        "bronze": 172.39,
+        "silver": 156.29,
+        "age_group": 134.59
+      },
+      "200 MR SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 140.59
+      },
+      "100 IM SCY": {
+        "bronze": 95.99000000000001,
+        "silver": 78.59,
+        "age_group": 71.49
+      },
+      "100 Back SCY": {
+        "bronze": 97.99000000000001,
+        "silver": 79.28999999999999,
+        "age_group": 70.39
+      },
+      "50 Free SCY": {
+        "bronze": 38.79,
+        "silver": 31.49,
+        "age_group": 28.09
+      },
+      "100 Free SCY": {
+        "bronze": 83.78999999999999,
+        "silver": 67.99,
+        "age_group": 61.19
+      },
+      "50 Fly SCY": {
+        "bronze": 47.99,
+        "silver": 35.59,
+        "age_group": 31.49
+      },
+      "200 Fly SCY": {
+        "bronze": 199.99,
+        "silver": 173.09,
+        "age_group": 165.79
+      },
+      "400/500 Free SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 361.59
+      },
+      "200 Breast SCY": {
+        "bronze": 219.99,
+        "silver": 198.69,
+        "age_group": 181.39
+      },
+      "100 Breast SCY": {
+        "bronze": 109.99000000000001,
+        "silver": 89.89,
+        "age_group": 81.99
+      },
+      "100 Fly SCY": {
+        "bronze": 103.99000000000001,
+        "silver": 80.99,
+        "age_group": 72.09
+      },
+      "400 IM SCY": {
+        "bronze": 387.99,
+        "silver": 366.29,
+        "age_group": 330.49
+      },
+      "500 Free SCY": {
+        "bronze": 440.99,
+        "silver": 397.49,
+        "age_group": null
+      }
+    }
+  },
+  "9-10": {
+    "Girl": {
+      "50 Free SCY": {
+        "bronze": 50.99,
+        "silver": null,
+        "age_group": null
+      },
+      "100 Free SCY": {
+        "bronze": 102.99000000000001,
+        "silver": null,
+        "age_group": null
+      },
+      "50 Fly SCY": {
+        "bronze": 58.99,
+        "silver": null,
+        "age_group": null
+      },
+      "200 IM SCY": {
+        "bronze": 228.49,
+        "silver": null,
+        "age_group": null
+      },
+      "100 Fly SCY": {
+        "bronze": 123.99,
+        "silver": null,
+        "age_group": null
+      },
+      "100 Breast SCY": {
+        "bronze": 129.99,
+        "silver": null,
+        "age_group": null
+      },
+      "200 Free SCY": {
+        "bronze": 205.99,
+        "silver": null,
+        "age_group": null
+      },
+      "100 Back SCY": {
+        "bronze": 110.09,
+        "silver": null,
+        "age_group": null
+      },
+      "50 Breast SCY": {
+        "bronze": 61.99,
+        "silver": null,
+        "age_group": null
+      },
+      "100 IM SCY": {
+        "bronze": 117.99000000000001,
+        "silver": null,
+        "age_group": null
+      },
+      "50 Back SCY": {
+        "bronze": 56.99,
+        "silver": null,
+        "age_group": null
+      },
+      "500 Free SCY": {
+        "bronze": 530.99,
+        "silver": null,
+        "age_group": null
+      }
+    },
+    "Boy": {
+      "50 Free SCY": {
+        "bronze": 50.99,
+        "silver": null,
+        "age_group": null
+      },
+      "100 Free SCY": {
+        "bronze": 103.99000000000001,
+        "silver": null,
+        "age_group": null
+      },
+      "50 Fly SCY": {
+        "bronze": 58.99,
+        "silver": null,
+        "age_group": null
+      },
+      "200 IM SCY": {
+        "bronze": 225.49,
+        "silver": null,
+        "age_group": null
+      },
+      "100 Fly SCY": {
+        "bronze": 123.99,
+        "silver": null,
+        "age_group": null
+      },
+      "100 Breast SCY": {
+        "bronze": 129.99,
+        "silver": null,
+        "age_group": null
+      },
+      "200 Free SCY": {
+        "bronze": 202.99,
+        "silver": null,
+        "age_group": null
+      },
+      "100 Back SCY": {
+        "bronze": 112.99000000000001,
+        "silver": null,
+        "age_group": null
+      },
+      "50 Breast SCY": {
+        "bronze": 61.99,
+        "silver": null,
+        "age_group": null
+      },
+      "100 IM SCY": {
+        "bronze": 116.99000000000001,
+        "silver": null,
+        "age_group": null
+      },
+      "50 Back SCY": {
+        "bronze": 56.99,
+        "silver": null,
+        "age_group": null
+      },
+      "500 Free SCY": {
+        "bronze": 530.99,
+        "silver": null,
+        "age_group": null
+      }
+    }
+  },
+  "8&U": {
+    "Girl": {
+      "50 Free SCY": {
+        "bronze": 59.99,
+        "silver": 44.89,
+        "age_group": null
+      },
+      "100 Free SCY": {
+        "bronze": 119.99000000000001,
+        "silver": 104.99000000000001,
+        "age_group": null
+      },
+      "50 Fly SCY": {
+        "bronze": 69.99,
+        "silver": 59.25,
+        "age_group": null
+      },
+      "25 Breast SCY": {
+        "bronze": 39.99,
+        "silver": 31.75,
+        "age_group": null
+      },
+      "200 IM SCY": {
+        "bronze": null,
+        "silver": 208.25,
+        "age_group": null
+      },
+      "25 Fly SCY": {
+        "bronze": 34.99,
+        "silver": 26.99,
+        "age_group": null
+      },
+      "25 Back SCY": {
+        "bronze": 34.99,
+        "silver": 26.49,
+        "age_group": null
+      },
+      "100 Fly SCY": {
+        "bronze": null,
+        "silver": 130.99,
+        "age_group": null
+      },
+      "100 Breast SCY": {
+        "bronze": null,
+        "silver": 131.09,
+        "age_group": null
+      },
+      "200 Free SCY": {
+        "bronze": 239.99,
+        "silver": 226.49,
+        "age_group": null
+      },
+      "25 Free SCY": {
+        "bronze": 29.99,
+        "silver": 22.49,
+        "age_group": null
+      },
+      "50 Breast SCY": {
+        "bronze": 79.99,
+        "silver": 65.49,
+        "age_group": null
+      },
+      "100 IM SCY": {
+        "bronze": 139.99,
+        "silver": 119.78999999999999,
+        "age_group": null
+      },
+      "50 Back SCY": {
+        "bronze": 69.99,
+        "silver": 55.99,
+        "age_group": null
+      },
+      "100 Back SCY": {
+        "bronze": null,
+        "silver": 117.49000000000001,
+        "age_group": null
+      }
+    },
+    "Boy": {
+      "50 Free SCY": {
+        "bronze": 59.99,
+        "silver": 47.79,
+        "age_group": null
+      },
+      "100 Free SCY": {
+        "bronze": 119.99000000000001,
+        "silver": 104.28999999999999,
+        "age_group": null
+      },
+      "50 Fly SCY": {
+        "bronze": 69.99,
+        "silver": 62.29,
+        "age_group": null
+      },
+      "25 Breast SCY": {
+        "bronze": 39.99,
+        "silver": 32.69,
+        "age_group": null
+      },
+      "200 IM SCY": {
+        "bronze": null,
+        "silver": 208.25,
+        "age_group": null
+      },
+      "25 Fly SCY": {
+        "bronze": 34.99,
+        "silver": 27.29,
+        "age_group": null
+      },
+      "25 Back SCY": {
+        "bronze": 34.99,
+        "silver": 26.69,
+        "age_group": null
+      },
+      "100 Fly SCY": {
+        "bronze": null,
+        "silver": 131.29,
+        "age_group": null
+      },
+      "100 Breast SCY": {
+        "bronze": null,
+        "silver": 132.29,
+        "age_group": null
+      },
+      "200 Free SCY": {
+        "bronze": 239.99,
+        "silver": 225.49,
+        "age_group": null
+      },
+      "25 Free SCY": {
+        "bronze": 29.99,
+        "silver": 22.79,
+        "age_group": null
+      },
+      "50 Breast SCY": {
+        "bronze": 79.99,
+        "silver": 66.59,
+        "age_group": null
+      },
+      "100 IM SCY": {
+        "bronze": 139.99,
+        "silver": 122.89,
+        "age_group": null
+      },
+      "50 Back SCY": {
+        "bronze": 69.99,
+        "silver": 55.89,
+        "age_group": null
+      },
+      "100 Back SCY": {
+        "bronze": null,
+        "silver": 117.89,
+        "age_group": null
+      }
+    }
+  },
+  "10&U": {
+    "Girl": {
+      "50 Free SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 32.49
+      },
+      "400/500 Free SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 425.69
+      },
+      "100 Free SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 73.09
+      },
+      "50 Fly SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 38.59
+      },
+      "200 IM SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 185.99
+      },
+      "100 Fly SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 93.39
+      },
+      "100 Breast SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 98.78999999999999
+      },
+      "200 Free SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 162.69
+      },
+      "50 Breast SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 44.89
+      },
+      "100 IM SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 85.09
+      },
+      "50 Back SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 38.79
+      },
+      "100 Back SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 84.69
+      }
+    },
+    "Boy": {
+      "50 Free SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 32.59
+      },
+      "400/500 Free SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 424.69
+      },
+      "100 Free SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 73.59
+      },
+      "50 Fly SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 38.99
+      },
+      "200 IM SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 188.69
+      },
+      "100 Fly SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 93.59
+      },
+      "100 Breast SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 99.99000000000001
+      },
+      "200 Free SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 162.99
+      },
+      "50 Breast SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 45.89
+      },
+      "100 IM SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 85.39
+      },
+      "50 Back SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 39.19
+      },
+      "100 Back SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 85.59
+      }
+    }
+  },
+  "13-14": {
+    "Girl": {
+      "200 Back SCY": {
+        "bronze": 169.99,
+        "silver": 156.29,
+        "age_group": 138.29
+      },
+      "200 Free-R SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 111.19
+      },
+      "1000 Free SCY": {
+        "bronze": 841.99,
+        "silver": 749.99,
+        "age_group": null
+      },
+      "MIXED 200 Free SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 108.19
+      },
+      "1650 Free SCY": {
+        "bronze": 1403.49,
+        "silver": 1282.69,
+        "age_group": null
+      },
+      "MIXED 200 MR SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 129.09
+      },
+      "800 Free-R SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 495.59
+      },
+      "400 MR SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 275.79
+      },
+      "1500/1650 Free SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 1156.89
+      },
+      "50 Breast SCY": {
+        "bronze": 45.09,
+        "silver": 39.49,
+        "age_group": 34.59
+      },
+      "50 Back SCY": {
+        "bronze": 38.79,
+        "silver": 34.39,
+        "age_group": 29.79
+      },
+      "800/1000 Free SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 687.19
+      },
+      "400 Free-R SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 239.59
+      },
+      "200 IM SCY": {
+        "bronze": 174.49,
+        "silver": 158.29,
+        "age_group": 139.39
+      },
+      "200 Free SCY": {
+        "bronze": 148.89,
+        "silver": 134.99,
+        "age_group": 122.29
+      },
+      "200 MR SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 132.39
+      },
+      "100 Back SCY": {
+        "bronze": 83.39,
+        "silver": 72.69,
+        "age_group": 63.89
+      },
+      "50 Free SCY": {
+        "bronze": 31.39,
+        "silver": 28.79,
+        "age_group": 26.19
+      },
+      "100 Free SCY": {
+        "bronze": 68.59,
+        "silver": 62.99,
+        "age_group": 56.59
+      },
+      "50 Fly SCY": {
+        "bronze": 38.29,
+        "silver": 33.59,
+        "age_group": 29.39
+      },
+      "200 Fly SCY": {
+        "bronze": 169.29,
+        "silver": 167.49,
+        "age_group": 146.19
+      },
+      "400/500 Free SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 329.49
+      },
+      "200 Breast SCY": {
+        "bronze": 192.09,
+        "silver": 181.29,
+        "age_group": 160.49
+      },
+      "100 Breast SCY": {
+        "bronze": 94.99000000000001,
+        "silver": 82.99,
+        "age_group": 74.19
+      },
+      "100 Fly SCY": {
+        "bronze": 84.89,
+        "silver": 71.89,
+        "age_group": 63.39
+      },
+      "400 IM SCY": {
+        "bronze": 370.59,
+        "silver": 341.99,
+        "age_group": 297.49
+      },
+      "500 Free SCY": {
+        "bronze": 390.99,
+        "silver": 362.29,
+        "age_group": null
+      }
+    },
+    "Boy": {
+      "200 Back SCY": {
+        "bronze": 166.99,
+        "silver": 149.59,
+        "age_group": 132.99
+      },
+      "200 Free-R SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 105.19
+      },
+      "1000 Free SCY": {
+        "bronze": 801.19,
+        "silver": 722.99,
+        "age_group": null
+      },
+      "MIXED 200 Free SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 108.19
+      },
+      "1650 Free SCY": {
+        "bronze": 1338.89,
+        "silver": 1242.79,
+        "age_group": null
+      },
+      "MIXED 200 MR SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 129.09
+      },
+      "800 Free-R SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 475.99
+      },
+      "400 MR SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 262.49
+      },
+      "1500/1650 Free SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 1125.99
+      },
+      "50 Breast SCY": {
+        "bronze": 41.29,
+        "silver": 37.29,
+        "age_group": 31.69
+      },
+      "50 Back SCY": {
+        "bronze": 36.39,
+        "silver": 31.99,
+        "age_group": 27.69
+      },
+      "800/1000 Free SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 659.99
+      },
+      "400 Free-R SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 226.79
+      },
+      "200 IM SCY": {
+        "bronze": 170.19,
+        "silver": 149.99,
+        "age_group": 133.19
+      },
+      "200 Free SCY": {
+        "bronze": 146.59,
+        "silver": 126.99,
+        "age_group": 117.59
+      },
+      "200 MR SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 126.36
+      },
+      "100 Back SCY": {
+        "bronze": 82.99,
+        "silver": 67.59,
+        "age_group": 61.09
+      },
+      "50 Free SCY": {
+        "bronze": 31.09,
+        "silver": 26.79,
+        "age_group": 24.59
+      },
+      "100 Free SCY": {
+        "bronze": 70.69,
+        "silver": 57.99,
+        "age_group": 53.59
+      },
+      "50 Fly SCY": {
+        "bronze": 35.59,
+        "silver": 31.79,
+        "age_group": 27.19
+      },
+      "200 Fly SCY": {
+        "bronze": 160.09,
+        "silver": 161.59,
+        "age_group": 139.69
+      },
+      "400/500 Free SCY": {
+        "bronze": null,
+        "silver": null,
+        "age_group": 316.69
+      },
+      "200 Breast SCY": {
+        "bronze": 183.79,
+        "silver": 170.29,
+        "age_group": 154.49
+      },
+      "100 Breast SCY": {
+        "bronze": 89.99,
+        "silver": 77.89,
+        "age_group": 69.89
+      },
+      "100 Fly SCY": {
+        "bronze": 83.78999999999999,
+        "silver": 67.59,
+        "age_group": 60.79
+      },
+      "400 IM SCY": {
+        "bronze": 347.69,
+        "silver": 317.79,
+        "age_group": 282.99
+      },
+      "500 Free SCY": {
+        "bronze": 387.39,
+        "silver": 345.59000000000003,
+        "age_group": null
+      }
+    }
+  }
+}
